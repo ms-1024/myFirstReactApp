@@ -8,15 +8,12 @@ import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
 
-  state = {
-    cards: this.props.cards || [],
-  }
-
   static propTypes = {
     title: PropTypes.string.isRequired,
     icon: PropTypes.string,
     cards: PropTypes.array,
     addCard: PropTypes.func,
+    id: PropTypes.string,
   }
 
   static defaultProps = {
